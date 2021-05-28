@@ -8,22 +8,21 @@ import ProductDetail from './containers/ProductDetail'
 
 function App() {
   return (
+    <div>
     <div className="App">
+    <Header></Header>
     <BrowserRouter>
-    
-        <Header></Header> 
         <Switch>
           <Route path= "/" exact component = {ProductListing}/>
           <Route path= "/test" exact component = {ProductDetail}/>
           <Route>404 Not Found!</Route>
         </Switch>
-
-
-
-        
     </BrowserRouter>
 
     </div>
+    
+    </div>
+
   );
 }
 

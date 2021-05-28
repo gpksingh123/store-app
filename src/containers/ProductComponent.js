@@ -1,12 +1,30 @@
 import React from 'react';
+import {useSelector} from 'react-redux';
 
 
 const ProductComponent = () => {
-    console.log("why is this not displaying")
+  
+    const allProducts = useSelector((state) => state);
+    const {id,title} = allProducts.allProducts[0]
+    console.log(id,title)
+
     return (
-        <div className = "ui fixed menu">
-            <div className = "ui container center">
-                <h2>ProductComponent</h2>
+        <div >
+            <div className = "four column wide">
+                <div className = "">
+                    <div className  = "card"></div>
+                        <div className = "image">
+                            <div className = "content">
+                                <div className = "header">
+                                    Product Component {title}
+                                </div>
+                            </div>
+
+                        
+                        </div>
+
+                
+                </div>
             </div>
         
         </div>
