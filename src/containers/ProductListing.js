@@ -25,10 +25,9 @@ const ProductListing = () => {
         console.log("Products in listing",products)
     
     return (
-    <div>
-        Product Listing
-        <ProductComponent />
-    </div>
+        <div className="ui grid">
+        <ProductComponent className="ui grid"/>
+      </div>
     )
 }
 

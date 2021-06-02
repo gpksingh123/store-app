@@ -36,7 +36,7 @@ const ProductComponent = () => {
 
     return (
 
-        <div>{renderList}</div>
+        <div className="ui grid" >{renderList}</div>
     );
 }
 
